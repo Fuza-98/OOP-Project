@@ -42,10 +42,10 @@ public class Resident {
 
     }
     
-    public static void search(Resident[] res, String keyword){
+    public static void search(Resident[] res, int count,String keyword){
         boolean found = false;
         
-        for(int i=0; i < res.length; i++){
+        for(int i=0; i < count; i++){
             if( res[i].name.equalsIgnoreCase(keyword) || 
                 res[i].residentID.equalsIgnoreCase(keyword)){
                 res[i].displayDetails();
